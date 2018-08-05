@@ -14,7 +14,6 @@ end
 
 post '/ingredients' do
   ingredient = params['ingredient']
-binding.pry
   File.open('ingredients.txt', 'a') do |file|
     file.puts(ingredient)
   end
